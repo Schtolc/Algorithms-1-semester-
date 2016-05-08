@@ -80,6 +80,7 @@ int greed_alg(Vector &times) {
         if (times[i].begin >= times[max_i].end) {
             amount++;
             max_i = i;
+	    cout << i << " " << times[i].begin <<" " <<  times[i].end << endl;
         }
     }
     return amount;
